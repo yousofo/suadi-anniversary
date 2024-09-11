@@ -47,10 +47,11 @@ async function handlePayment() {
       }
     );
     const data = await result.json();
+    alert("جاري التحويل لبوابة الدفع ...");
     window.location.href = data.redirect_url;
-    return data;
   } catch (error) {
     console.log(error);
+    alert("حدث خطأ أثناء عملية الدفع. الرجاء المحاولة مرة أخرى.");
   }
 }
 
