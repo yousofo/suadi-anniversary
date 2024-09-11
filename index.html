@@ -18,63 +18,122 @@
 
           <div class="cards-imgs-wrapper">
             <div class="title-imgs">
-              <img class="dream-img" src="./media/dream-img.png" alt="">
-              <img src="./media/anniversary-title-img.png" alt="">
+              <img class="dream-img" src="./media/dream-img.png" alt="" />
+              <img src="./media/anniversary-title-img.png" alt="" />
             </div>
             <ul>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="البرمجة programming"
+                  data-price="1850"
+                  class="apply-button"
+                  type="button"
+                >
+                  apply
+                </button>
                 <img src="./media/البرمجة.png" alt="" />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="الدورات التأسيسة في مجال الحاسب الألي"
+                  data-price="1200"
+                  class="apply-button"
+                  type="button"
+                >
+                  apply
+                </button>
                 <img
                   src="./media/الدورات التأسيسة في مجال الحاسب الألي.png"
                   alt=""
                 />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="الموارد البشرية (SHRM)"
+                  class="apply-button"
+                  type="button"
+                  data-price="5000"
+                >
+                  apply
+                </button>
                 <img src="./media/الموارد البشرية (SHRM).png" alt="" />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
-                <img src="./media/الموارد البشرية (SHRM).png" alt="" />
-              </li>
-              <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="السايبر سكرتي المتقدم (Cyber Security)"
+                  class="apply-button"
+                  type="button"
+                  data-price="3000"
+                >
+                  apply
+                </button>
                 <img
                   src="./media/بكج السايبر سكرتي المتقدم (Cyber Security).png"
                   alt=""
                 />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="دورات الأساسي في اٍدارة المشاريع"
+                  class="apply-button"
+                  type="button"
+                  data-price="1650"
+                >
+                  apply
+                </button>
                 <img
                   src="./media/بكج السيابر سكرتي الاساسي (Cyber Security) copy.png"
                   alt=""
                 />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="السيايبر سكرتي الاساسي (Cyber Security)"
+                  class="apply-button"
+                  type="button"
+                  data-price="2700"
+                >
+                  apply
+                </button>
                 <img
                   src="./media/بكج السيابر سكرتي الاساسي (Cyber Security).png"
                   alt=""
                 />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="بكج محلل البيانات (Data Analysis)"
+                  class="apply-button"
+                  type="button"
+                  data-price="1650"
+                >
+                  apply
+                </button>
                 <img
                   src="./media/بكج محلل البيانات (Data Analysis).png"
                   alt=""
                 />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="دورات المتقدم في أدارة المشاريع"
+                  class="apply-button"
+                  type="button"
+                  data-price="2000"
+                >
+                  apply
+                </button>
                 <img src="./media/دورات المتقدم في إدارة المشاريع.png" alt="" />
               </li>
               <li class="card">
-                <button class="apply-button" type="button">apply</button>
+                <button
+                  data-name="دورات شبكات الحاسب الألي computer networking courses"
+                  class="apply-button"
+                  type="button"
+                  data-price="2500"
+                >
+                  apply
+                </button>
                 <img src="./media/دورات شبكات الحاسب الألي.png" alt="" />
               </li>
             </ul>
@@ -90,9 +149,7 @@
         </div> -->
       </div>
 
-      <!-- payment -->
       <!-- apply form -->
-
       <div class="payment-wrapper">
         <div id="payment" class="payment-options" dir="rtl">
           <svg
@@ -114,42 +171,60 @@
               سجل الان
             </h2>
           </div>
-          <form action="" class="payment-body">
+          <form action="" id="paymentForm" class="payment-body">
             <div class="input-wrapper">
+              <!-- name -->
               <div>
                 <label for="name">ادخل اسمك الرباعي</label>
                 <input
+                  required
                   type="text"
                   name=""
                   id="name"
                   placeholder="ادخل اسمك الرباعي"
                 />
               </div>
+
+              <!-- id -->
               <div>
                 <label for="id"> ادخل رقم الهوية </label>
-                <input type="text" id="id" placeholder="ادخل رقم الهوية" />
+                <input
+                  required
+                  type="text"
+                  id="id"
+                  placeholder="ادخل رقم الهوية"
+                />
               </div>
+
+              <!-- phone -->
               <div>
                 <label for="phone"> ادخل رقم هاتفك </label>
                 <input
+                  required
                   type="text"
                   name=""
                   id="phone"
                   placeholder="ادخل رقم هاتفك"
                 />
               </div>
+
+              <!-- email -->
               <div>
                 <label for="email"> ادخل البريد الالكتروني </label>
                 <input
+                  required
                   type="email"
                   name=""
                   id="email"
                   placeholder="ادخل البريد الالكتروني"
                 />
               </div>
+
+              <!-- password -->
               <div>
                 <label for="password"> ادخل كلمة المرور </label>
                 <input
+                  required
                   type="password"
                   name=""
                   id="password"
@@ -162,10 +237,12 @@
               <div class="flex flex-col gap-1">
                 <div class="option flex gap-2 items-center">
                   <input
+                    value="tamara"
                     type="radio"
                     name="paymentOptionSelection"
                     id="tamara"
-                    onClick="TODO"
+                    disabled
+                    required
                   />
                   <label htmlFor="tamara" class="flex gap-1 items-center">
                     <img
@@ -178,10 +255,10 @@
                 </div>
                 <div class="option flex gap-2 items-center">
                   <input
+                    value="masterCard"
                     type="radio"
                     name="paymentOptionSelection"
                     id="masterCard"
-                    onClick="TODO"
                   />
                   <label htmlFor="masterCard" class="flex gap-1 items-center">
                     <img
@@ -194,10 +271,10 @@
                 </div>
                 <div class="option flex gap-2 items-center">
                   <input
+                    value="applePay"
                     type="radio"
                     name="paymentOptionSelection"
                     id="applePay"
-                    onClick="TODO"
                   />
                   <label htmlFor="applePay" class="flex gap-1 items-center">
                     <img
@@ -210,10 +287,10 @@
                 </div>
                 <div class="option flex gap-2 items-center">
                   <input
+                    value="madaPay"
                     type="radio"
                     name="paymentOptionSelection"
                     id="madaPay"
-                    onClick="TODO"
                   />
                   <label htmlFor="madaPay" class="flex gap-1 items-center">
                     <img
@@ -226,10 +303,10 @@
                 </div>
                 <div class="option flex gap-2 items-center">
                   <input
+                    value="tabby"
                     type="radio"
                     name="paymentOptionSelection"
                     id="tabby"
-                    onClick="TODO"
                   />
                   <label htmlFor="tabby" class="flex gap-1 items-center">
                     <img
