@@ -16,60 +16,69 @@
             alt=""
           />
 
-          <ul>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img src="./media/البرمجة.png" alt="" />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img
-                src="./media/الدورات التأسيسة في مجال الحاسب الألي.png"
-                alt=""
-              />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img src="./media/الموارد البشرية (SHRM).png" alt="" />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img src="./media/الموارد البشرية (SHRM).png" alt="" />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img
-                src="./media/بكج السايبر سكرتي المتقدم (Cyber Security).png"
-                alt=""
-              />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img
-                src="./media/بكج السيابر سكرتي الاساسي (Cyber Security) copy.png"
-                alt=""
-              />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img
-                src="./media/بكج السيابر سكرتي الاساسي (Cyber Security).png"
-                alt=""
-              />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img src="./media/بكج محلل البيانات (Data Analysis).png" alt="" />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img src="./media/دورات المتقدم في إدارة المشاريع.png" alt="" />
-            </li>
-            <li class="card">
-              <button class="apply-button" type="button">apply</button>
-              <img src="./media/دورات شبكات الحاسب الألي.png" alt="" />
-            </li>
-          </ul>
+          <div class="cards-imgs-wrapper">
+            <div class="title-imgs">
+              <img class="dream-img" src="./media/dream-img.png" alt="">
+              <img src="./media/anniversary-title-img.png" alt="">
+            </div>
+            <ul>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img src="./media/البرمجة.png" alt="" />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img
+                  src="./media/الدورات التأسيسة في مجال الحاسب الألي.png"
+                  alt=""
+                />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img src="./media/الموارد البشرية (SHRM).png" alt="" />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img src="./media/الموارد البشرية (SHRM).png" alt="" />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img
+                  src="./media/بكج السايبر سكرتي المتقدم (Cyber Security).png"
+                  alt=""
+                />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img
+                  src="./media/بكج السيابر سكرتي الاساسي (Cyber Security) copy.png"
+                  alt=""
+                />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img
+                  src="./media/بكج السيابر سكرتي الاساسي (Cyber Security).png"
+                  alt=""
+                />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img
+                  src="./media/بكج محلل البيانات (Data Analysis).png"
+                  alt=""
+                />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img src="./media/دورات المتقدم في إدارة المشاريع.png" alt="" />
+              </li>
+              <li class="card">
+                <button class="apply-button" type="button">apply</button>
+                <img src="./media/دورات شبكات الحاسب الألي.png" alt="" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -82,6 +91,8 @@
       </div>
 
       <!-- payment -->
+      <!-- apply form -->
+
       <div class="payment-wrapper">
         <div id="payment" class="payment-options" dir="rtl">
           <svg
@@ -100,104 +111,139 @@
             <h2
               class="text-2xl font-bold text-white cairo-font md:text-3xl mb-2 p-4"
             >
-              وسلية الدفع
+              سجل الان
             </h2>
           </div>
-          <div class="options">
-            <div class="flex flex-col gap-1">
-              <div class="option flex gap-2 items-center">
+          <form action="" class="payment-body">
+            <div class="input-wrapper">
+              <div>
+                <label for="name">ادخل اسمك الرباعي</label>
                 <input
-                  type="radio"
-                  name="paymentOptionSelection"
-                  id="tamara"
-                  onClick="TODO"
+                  type="text"
+                  name=""
+                  id="name"
+                  placeholder="ادخل اسمك الرباعي"
                 />
-                <label htmlFor="tamara" class="flex gap-1 items-center">
-                  <img
-                    src="./media/payment/tamara.png"
-                    class="max-h-10"
-                    alt=""
-                  />
-                  <span class="text-sm">Tamara</span>
-                </label>
               </div>
-              <div class="option flex gap-2 items-center">
-                <input
-                  type="radio"
-                  name="paymentOptionSelection"
-                  id="masterCard"
-                  onClick="TODO"
-                />
-                <label htmlFor="masterCard" class="flex gap-1 items-center">
-                  <img
-                    src="./media/payment/master-card.png"
-                    class="max-h-10"
-                    alt=""
-                  />
-                  <span class="text-sm">Mastercard</span>
-                </label>
+              <div>
+                <label for="id"> ادخل رقم الهوية </label>
+                <input type="text" id="id" placeholder="ادخل رقم الهوية" />
               </div>
-              <div class="option flex gap-2 items-center">
+              <div>
+                <label for="phone"> ادخل رقم هاتفك </label>
                 <input
-                  type="radio"
-                  name="paymentOptionSelection"
-                  id="applePay"
-                  onClick="TODO"
+                  type="text"
+                  name=""
+                  id="phone"
+                  placeholder="ادخل رقم هاتفك"
                 />
-                <label htmlFor="applePay" class="flex gap-1 items-center">
-                  <img
-                    src="./media/payment/apple-pay.png"
-                    class="max-h-10"
-                    alt=""
-                  />
-                  <span class="text-sm">Apple Pay</span>
-                </label>
               </div>
-              <div class="option flex gap-2 items-center">
+              <div>
+                <label for="email"> ادخل البريد الالكتروني </label>
                 <input
-                  type="radio"
-                  name="paymentOptionSelection"
-                  id="madaPay"
-                  onClick="TODO"
+                  type="email"
+                  name=""
+                  id="email"
+                  placeholder="ادخل البريد الالكتروني"
                 />
-                <label htmlFor="madaPay" class="flex gap-1 items-center">
-                  <img
-                    src="./media/payment/mada-pay-removebg-preview.png"
-                    class="max-h-10"
-                    alt=""
-                  />
-                  <span class="text-sm">mada Pay</span>
-                </label>
               </div>
-              <div class="option flex gap-2 items-center">
+              <div>
+                <label for="password"> ادخل كلمة المرور </label>
                 <input
-                  type="radio"
-                  name="paymentOptionSelection"
-                  id="tabby"
-                  onClick="TODO"
+                  type="password"
+                  name=""
+                  id="password"
+                  placeholder="ادخل كلمة المرور"
                 />
-                <label htmlFor="tabby" class="flex gap-1 items-center">
-                  <img
-                    src="./media/payment/tabby-pay-removebg-preview.png"
-                    class="max-h-10"
-                    alt=""
-                  />
-                  <span class="text-sm">Tabby</span>
-                </label>
               </div>
             </div>
-
-            <DiscountAccordion
-              discountCode="{discountCode}"
-              checkDiscount="{checkDiscount}"
-            />
-            <button
-              class="bg-abad-gold rounded-lg text-[#282828] font-medium p-3 drop-shadow-lg"
-              onClick="{handleSubmit}"
-            >
-              شراء الان
-            </button>
-          </div>
+            <div class="options">
+              <h4>اختر طريقة الدفع</h4>
+              <div class="flex flex-col gap-1">
+                <div class="option flex gap-2 items-center">
+                  <input
+                    type="radio"
+                    name="paymentOptionSelection"
+                    id="tamara"
+                    onClick="TODO"
+                  />
+                  <label htmlFor="tamara" class="flex gap-1 items-center">
+                    <img
+                      src="./media/payment/tamara.png"
+                      class="max-h-10"
+                      alt=""
+                    />
+                    <span class="text-sm">Tamara</span>
+                  </label>
+                </div>
+                <div class="option flex gap-2 items-center">
+                  <input
+                    type="radio"
+                    name="paymentOptionSelection"
+                    id="masterCard"
+                    onClick="TODO"
+                  />
+                  <label htmlFor="masterCard" class="flex gap-1 items-center">
+                    <img
+                      src="./media/payment/master-card.png"
+                      class="max-h-10"
+                      alt=""
+                    />
+                    <span class="text-sm">Mastercard</span>
+                  </label>
+                </div>
+                <div class="option flex gap-2 items-center">
+                  <input
+                    type="radio"
+                    name="paymentOptionSelection"
+                    id="applePay"
+                    onClick="TODO"
+                  />
+                  <label htmlFor="applePay" class="flex gap-1 items-center">
+                    <img
+                      src="./media/payment/apple-pay.png"
+                      class="max-h-10"
+                      alt=""
+                    />
+                    <span class="text-sm">Apple Pay</span>
+                  </label>
+                </div>
+                <div class="option flex gap-2 items-center">
+                  <input
+                    type="radio"
+                    name="paymentOptionSelection"
+                    id="madaPay"
+                    onClick="TODO"
+                  />
+                  <label htmlFor="madaPay" class="flex gap-1 items-center">
+                    <img
+                      src="./media/payment/mada-pay-removebg-preview.png"
+                      class="max-h-10"
+                      alt=""
+                    />
+                    <span class="text-sm">mada Pay</span>
+                  </label>
+                </div>
+                <div class="option flex gap-2 items-center">
+                  <input
+                    type="radio"
+                    name="paymentOptionSelection"
+                    id="tabby"
+                    onClick="TODO"
+                  />
+                  <label htmlFor="tabby" class="flex gap-1 items-center">
+                    <img
+                      src="./media/payment/tabby-pay-removebg-preview.png"
+                      class="max-h-10"
+                      alt=""
+                    />
+                    <span class="text-sm">Tabby</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="اشترك الأن" class="apply-now-button" />
+          </form>
         </div>
       </div>
     </main>
