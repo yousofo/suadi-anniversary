@@ -107,12 +107,33 @@ body {
               position: relative;
               button {
                 position: absolute;
-                opacity: 0;
                 cursor: pointer;
-                bottom: 5%;
+                bottom: 5.2%;
                 width: 80%;
+                background-color: transparent;
                 left: 10%;
                 height: 15%;
+                border: 0;
+                border-radius: 100px;
+                .btn-bg{
+                  position: absolute;
+                  width: 90%;
+                  height: 80%;
+                  left: 5%;
+                  top: 10%;
+                  background-color: transparent;
+                  border-radius: 100px;
+                  transition: all 0.2s ease-in-out;
+                }
+                span:nth-child(2){
+                  opacity: 0;
+                }
+                &:hover {
+                  .btn-bg{
+                    box-shadow: 0 0 10px 5px #d900ff3b;
+                    background-color: #d400ff3b;
+                  }
+                }
               }
               img {
                 width: 100%;
@@ -189,8 +210,6 @@ body {
         flex-direction: column;
         gap: 8px;
         > div {
-          label {
-          }
           input {
             margin-top: 4px;
             border-radius: 8px;
@@ -232,6 +251,10 @@ body {
         font-weight: 600;
         border-radius: 8px;
         cursor: pointer;
+        &:hover{
+          opacity: 0.9;
+          box-shadow: 0 0 5px 2px #d900ff3b;
+        }
       }
     }
   }

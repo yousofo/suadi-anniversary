@@ -120,12 +120,31 @@ body main .container .cards-container .cards-imgs-wrapper ul .card {
 }
 body main .container .cards-container .cards-imgs-wrapper ul .card button {
   position: absolute;
-  opacity: 0;
   cursor: pointer;
-  bottom: 5%;
+  bottom: 5.2%;
   width: 80%;
+  background-color: transparent;
   left: 10%;
   height: 15%;
+  border: 0;
+  border-radius: 100px;
+}
+body main .container .cards-container .cards-imgs-wrapper ul .card button .btn-bg {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  top: 10%;
+  background-color: transparent;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+body main .container .cards-container .cards-imgs-wrapper ul .card button span:nth-child(2) {
+  opacity: 0;
+}
+body main .container .cards-container .cards-imgs-wrapper ul .card button:hover .btn-bg {
+  box-shadow: 0 0 10px 5px rgba(217, 0, 255, 0.231372549);
+  background-color: rgba(212, 0, 255, 0.231372549);
 }
 body main .container .cards-container .cards-imgs-wrapper ul .card img {
   width: 100%;
@@ -237,4 +256,8 @@ body main .container .cards-container .cards-imgs-wrapper ul .card img {
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
+}
+.payment-wrapper .payment-options .payment-body .apply-now-button:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 5px 2px rgba(217, 0, 255, 0.231372549);
 }/*# sourceMappingURL=style.css.map */
