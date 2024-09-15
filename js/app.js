@@ -9,12 +9,14 @@ document.querySelectorAll(".apply-button").forEach((button) => {
       name: button.getAttribute("data-name"),
       price: button.getAttribute("data-price"),
     };
+    document.querySelector("body").classList.add("no-scrolling")
     document.querySelector(".payment-wrapper").classList.add("active");
   });
 });
 
 document.querySelector("#closePayment").addEventListener("click", () => {
   document.querySelector(".payment-wrapper").classList.remove("active");
+  document.querySelector("body").classList.remove("no-scrolling")
 });
 
 document.querySelectorAll("input[type=radio]").forEach((radio) => {

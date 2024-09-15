@@ -83,7 +83,7 @@ body {
                 padding: 14px;
               }
             }
-            @media (min-width:640px) {
+            @media (min-width: 640px) {
               img:nth-child(1) {
                 width: 33%;
               }
@@ -115,7 +115,7 @@ body {
                 height: 15%;
                 border: 0;
                 border-radius: 100px;
-                .btn-bg{
+                .btn-bg {
                   position: absolute;
                   width: 90%;
                   height: 80%;
@@ -125,11 +125,11 @@ body {
                   border-radius: 100px;
                   transition: all 0.2s ease-in-out;
                 }
-                span:nth-child(2){
+                span:nth-child(2) {
                   opacity: 0;
                 }
                 &:hover {
-                  .btn-bg{
+                  .btn-bg {
                     box-shadow: 0 0 10px 5px #d900ff3b;
                     background-color: #d400ff3b;
                   }
@@ -144,121 +144,125 @@ body {
       }
     }
   }
-}
-.active {
-  opacity: 1 !important;
-  pointer-events: all !important;
-  .payment-options {
-    scale: 1 !important;
+  .active {
+    opacity: 1 !important;
+    pointer-events: all !important;
+    .payment-options {
+      scale: 1 !important;
+    }
   }
-}
-.payment-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  padding: 16px 10px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  // align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  .payment-options {
-    min-width: 320px;
+  .payment-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    padding: 16px 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    transition: all 0.15s ease-in-out;
-    scale: 0;
-    border-radius: 2px;
-    height: fit-content;
-    overflow: hidden;
-    background-color: white;
-    @media screen and (min-width: 768px) {
-      width: 400px;
-    }
-    h2 {
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      margin-bottom: 8px;
-    }
-    .payment-header {
-      background-color: #812990;
-      padding: 16px;
-    }
-
-    #closePayment {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      cursor: pointer;
-      color: white;
-    }
-    .payment-body {
+    justify-content: center;
+    // align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    .payment-options {
+      min-width: 320px;
       display: flex;
-      color: #383838;
-      font-weight: 600;
       flex-direction: column;
       position: relative;
-      gap: 16px;
-      padding: 16px;
-      width: 100%;
-      .input-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        > div {
-          input {
-            margin-top: 4px;
-            border-radius: 8px;
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #812990;
-          }
-        }
+      transition: all 0.15s ease-in-out;
+      scale: 0;
+      border-radius: 2px;
+      height: fit-content;
+      overflow: hidden;
+      background-color: white;
+      @media screen and (min-width: 768px) {
+        width: 400px;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 8px;
+      }
+      .payment-header {
+        background-color: #812990;
+        padding: 16px;
       }
 
-      .options {
-        > h4 {
-          font-size: 20px;
-        }
-        .option {
+      #closePayment {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        color: white;
+      }
+      .payment-body {
+        display: flex;
+        color: #383838;
+        font-weight: 600;
+        flex-direction: column;
+        position: relative;
+        gap: 16px;
+        padding: 16px;
+        width: 100%;
+        .input-wrapper {
           display: flex;
-          font-weight: 400;
+          flex-direction: column;
           gap: 8px;
-          align-items: center;
-          label {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            img {
-              max-height: 40px;
-            }
-            span {
-              font-size: 16px;
+          > div {
+            input {
+              margin-top: 4px;
+              border-radius: 8px;
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #812990;
             }
           }
         }
-      }
-      .apply-now-button {
-        background-color: #812990;
-        color: white;
-        border: none;
-        padding: 12px;
-        font-size: 16px;
-        font-weight: 600;
-        border-radius: 8px;
-        cursor: pointer;
-        &:hover{
-          opacity: 0.9;
-          box-shadow: 0 0 5px 2px #d900ff3b;
+
+        .options {
+          > h4 {
+            font-size: 20px;
+          }
+          .option {
+            display: flex;
+            font-weight: 400;
+            gap: 8px;
+            align-items: center;
+            label {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              img {
+                max-height: 40px;
+              }
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .apply-now-button {
+          background-color: #812990;
+          color: white;
+          border: none;
+          padding: 12px;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 8px;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 5px 2px #d900ff3b;
+          }
         }
       }
     }
+  }
+  &.no-scrolling{
+    height: 100vh;
+    overflow: hidden;
   }
 }

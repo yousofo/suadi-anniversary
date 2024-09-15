@@ -149,16 +149,14 @@ body main .container .cards-container .cards-imgs-wrapper ul .card button:hover 
 body main .container .cards-container .cards-imgs-wrapper ul .card img {
   width: 100%;
 }
-
-.active {
+body .active {
   opacity: 1 !important;
   pointer-events: all !important;
 }
-.active .payment-options {
+body .active .payment-options {
   scale: 1 !important;
 }
-
-.payment-wrapper {
+body .payment-wrapper {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -173,7 +171,7 @@ body main .container .cards-container .cards-imgs-wrapper ul .card img {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.payment-wrapper .payment-options {
+body .payment-wrapper .payment-options {
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -187,28 +185,28 @@ body main .container .cards-container .cards-imgs-wrapper ul .card img {
   background-color: white;
 }
 @media screen and (min-width: 768px) {
-  .payment-wrapper .payment-options {
+  body .payment-wrapper .payment-options {
     width: 400px;
   }
 }
-.payment-wrapper .payment-options h2 {
+body .payment-wrapper .payment-options h2 {
   font-size: 20px;
   font-weight: bold;
   color: white;
   margin-bottom: 8px;
 }
-.payment-wrapper .payment-options .payment-header {
+body .payment-wrapper .payment-options .payment-header {
   background-color: #812990;
   padding: 16px;
 }
-.payment-wrapper .payment-options #closePayment {
+body .payment-wrapper .payment-options #closePayment {
   position: absolute;
   top: 5px;
   right: 5px;
   cursor: pointer;
   color: white;
 }
-.payment-wrapper .payment-options .payment-body {
+body .payment-wrapper .payment-options .payment-body {
   display: flex;
   color: #383838;
   font-weight: 600;
@@ -218,39 +216,39 @@ body main .container .cards-container .cards-imgs-wrapper ul .card img {
   padding: 16px;
   width: 100%;
 }
-.payment-wrapper .payment-options .payment-body .input-wrapper {
+body .payment-wrapper .payment-options .payment-body .input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.payment-wrapper .payment-options .payment-body .input-wrapper > div input {
+body .payment-wrapper .payment-options .payment-body .input-wrapper > div input {
   margin-top: 4px;
   border-radius: 8px;
   width: 100%;
   padding: 12px;
   border: 1px solid #812990;
 }
-.payment-wrapper .payment-options .payment-body .options > h4 {
+body .payment-wrapper .payment-options .payment-body .options > h4 {
   font-size: 20px;
 }
-.payment-wrapper .payment-options .payment-body .options .option {
+body .payment-wrapper .payment-options .payment-body .options .option {
   display: flex;
   font-weight: 400;
   gap: 8px;
   align-items: center;
 }
-.payment-wrapper .payment-options .payment-body .options .option label {
+body .payment-wrapper .payment-options .payment-body .options .option label {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.payment-wrapper .payment-options .payment-body .options .option label img {
+body .payment-wrapper .payment-options .payment-body .options .option label img {
   max-height: 40px;
 }
-.payment-wrapper .payment-options .payment-body .options .option label span {
+body .payment-wrapper .payment-options .payment-body .options .option label span {
   font-size: 16px;
 }
-.payment-wrapper .payment-options .payment-body .apply-now-button {
+body .payment-wrapper .payment-options .payment-body .apply-now-button {
   background-color: #812990;
   color: white;
   border: none;
@@ -260,7 +258,11 @@ body main .container .cards-container .cards-imgs-wrapper ul .card img {
   border-radius: 8px;
   cursor: pointer;
 }
-.payment-wrapper .payment-options .payment-body .apply-now-button:hover {
+body .payment-wrapper .payment-options .payment-body .apply-now-button:hover {
   opacity: 0.9;
   box-shadow: 0 0 5px 2px rgba(217, 0, 255, 0.231372549);
+}
+body.no-scrolling {
+  height: 100vh;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
