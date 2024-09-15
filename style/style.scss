@@ -108,31 +108,21 @@ body {
               button {
                 position: absolute;
                 cursor: pointer;
-                bottom: 5.2%;
-                width: 80%;
+                bottom: 5%;
+                width: 77%;
                 background-color: transparent;
                 left: 10%;
-                height: 15%;
+                height: 15.1%;
                 border: 0;
                 border-radius: 100px;
-                .btn-bg {
-                  position: absolute;
-                  width: 90%;
-                  height: 80%;
-                  left: 5%;
-                  top: 10%;
-                  background-color: transparent;
-                  border-radius: 100px;
-                  transition: all 0.2s ease-in-out;
-                }
-                span:nth-child(2) {
+                border-top-right-radius: 60px;
+                transition: all 0.2s ease-in-out;
+                span {
                   opacity: 0;
                 }
                 &:hover {
-                  .btn-bg {
-                    box-shadow: 0 0 10px 5px #d900ff3b;
-                    background-color: #d400ff3b;
-                  }
+                  box-shadow: -10px 0px 10px 3px #d900ff3b;
+                  background-color: #d400ff3b;
                 }
               }
               img {
@@ -261,7 +251,7 @@ body {
       }
     }
   }
-  &.no-scrolling{
+  &.no-scrolling {
     height: 100vh;
     overflow: hidden;
   }
