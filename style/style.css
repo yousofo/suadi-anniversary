@@ -4,11 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --ann-primary-color: #812990;
+  --ann-secondary-color: #d900ff;
+  --ann-gold: #ffb504;
+}
+
 body main {
   background: url("../media/bg-filler.png");
   background-position: center;
   position: relative;
   padding: 16px;
+  min-height: 100vh;
+  padding-bottom: 32px;
 }
 @media (min-width: 640px) {
   body main {
@@ -116,16 +124,17 @@ body main .container .cards-container .cards-imgs-wrapper ul {
   gap: 16px;
 }
 body main .container .cards-container .cards-imgs-wrapper ul .card {
+  list-style: none;
   position: relative;
 }
 body main .container .cards-container .cards-imgs-wrapper ul .card button {
   position: absolute;
   cursor: pointer;
-  bottom: 5%;
-  width: 77%;
+  bottom: 3%;
   background-color: transparent;
-  left: 10%;
-  height: 15.1%;
+  right: 8%;
+  width: 39%;
+  height: 12%;
   border: 0;
   border-radius: 100px;
   border-top-right-radius: 60px;
@@ -135,8 +144,7 @@ body main .container .cards-container .cards-imgs-wrapper ul .card button span {
   opacity: 0;
 }
 body main .container .cards-container .cards-imgs-wrapper ul .card button:hover {
-  box-shadow: -10px 0px 10px 3px rgba(217, 0, 255, 0.231372549);
-  background-color: rgba(212, 0, 255, 0.231372549);
+  box-shadow: inset -1px 0px 24px 3px rgba(217, 0, 255, 0.5), -3px 0px 10px 0px rgba(217, 0, 255, 0.5);
 }
 body main .container .cards-container .cards-imgs-wrapper ul .card img {
   width: 100%;
@@ -188,7 +196,7 @@ body .payment-wrapper .payment-options h2 {
   margin-bottom: 8px;
 }
 body .payment-wrapper .payment-options .payment-header {
-  background-color: #812990;
+  background-color: var(--ann-primary-color);
   padding: 16px;
 }
 body .payment-wrapper .payment-options #closePayment {
@@ -218,7 +226,7 @@ body .payment-wrapper .payment-options .payment-body .input-wrapper > div input 
   border-radius: 8px;
   width: 100%;
   padding: 12px;
-  border: 1px solid #812990;
+  border: 1px solid var(--ann-primary-color);
 }
 body .payment-wrapper .payment-options .payment-body .options > h4 {
   font-size: 20px;
@@ -241,7 +249,7 @@ body .payment-wrapper .payment-options .payment-body .options .option label span
   font-size: 16px;
 }
 body .payment-wrapper .payment-options .payment-body .apply-now-button {
-  background-color: #812990;
+  background-color: var(--ann-primary-color);
   color: white;
   border: none;
   padding: 12px;
@@ -252,9 +260,19 @@ body .payment-wrapper .payment-options .payment-body .apply-now-button {
 }
 body .payment-wrapper .payment-options .payment-body .apply-now-button:hover {
   opacity: 0.9;
-  box-shadow: 0 0 5px 2px rgba(217, 0, 255, 0.231372549);
+  box-shadow: 0 0 5px 2px var(--ann-secondary-color) 3b;
 }
 body.no-scrolling {
   height: 100vh;
   overflow: hidden;
+}
+
+.nav-link {
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  padding-inline-start: 20px;
+  color: #da02ff !important;
 }/*# sourceMappingURL=style.css.map */
